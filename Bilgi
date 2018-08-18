@@ -1,0 +1,27 @@
+print("1.Remote File Exploit")
+print("2.ZER0DAY")
+print("3.Local Exploit")
+print("4.Dos Exploit")
+print("5.Command Execution Exploit")
+
+secim = int(input("Bir Tür Seçiniz :"))
+
+sonuc = 0;
+
+if(secim == 1):
+    print("Remote File Exploit Bilgilendirme...")
+    print("RFI saldirganin bir komut dosyasi kullanarak bir web sitesinde veya sunucuda ozel kodlanmıs kotu amacli bir dosya yuklemesini saglayan Uzaktan Dosya Eklemeyi temsil eder.Bu guvenlik acigi, web sitelerindeki zayif dogrulama kontrollerinden yararlanir ve sonucta sunucuda kod yurutmesine veya web sitesinde kod yurutmesine javascript kullanarak XSS saldirisi yol acabilir. Bu sefer, Uzak Dosya Ekleme ile ilgili basit bir ögretici yazacagım ve ögreticinin sonuna gelince, bunun ne hakkinda oldugunu bildiğinizi ve bir ya da iki saldiri duzenleyebileceginizi varsayalim")
+elif(secim == 2):
+    print("ZER0DAY Bilgilendirme...")
+    print("ZER0DAY exploiti genelde çok nadir bulunan ücretli kısa süreline piyasaya ücretsiz sürülen ve çok görülmeyen bir exploit türüdür.Firmalar genelde bu exploit türünü satın alır ve sistemlerdeki açıklarını kapatır bu yüzden\nçok hızlı olmanız gerek.")
+elif(secim == 3):
+    print("Local(Lokal)Exploit Bilgilendirme...")
+    print(" Lokal Exploitler, bir *.exe *.gif v.s gibi dosya çalıştırıldığında devreye girer ve yerel bilgisayarda yüklü olan vurnerable(yaralı) software sayesinde exploitde entegre edilmiş shellcode`u çalıştır ve kötü kod enjekte eder. Bunun sayesinde saldırgan yüksek haklara sahip olur.")
+elif(secim == 4):
+    print("DOS Exploit Bilgilendirme...")
+    print("İlk tanınmış olan açığı yazılan exploit'ler Dos- Exploitlerdir (Denial - of Service) Bir sistemi yavaşlandıran veya durduran exploitlerdir. Çok sayıda örneğini bulabileceğimiz bu exploiti genellikle işletim sistemi güncelleştirme versiyonlarında rastlamaktayız.")
+elif(secim == 5) :
+    print("Command Execution(Komut Çalıştırma)Exploit Bİlgilendirme...")
+    print("Saldırgan tarafından kontrol edilen bir program kodu hedef sisteme uygulama. Böyle bir exploit'i doğru şekilde çalıştırabilmesi için programcı veya saldırgan, hafıza olmak üzere hedef uygulamayı iyi bilmesi gerek. Bu bilgileri açık bir program kodu kaynağından veya test ederek edinir. Kendi kodunu becerikli yere yerleştirmeli çalıştırabilmesi için. Command-Execution-Exploits çok tehlikeli, çünkü hedef olan sistemde saldırgan tüm haklara sahip oluyor. Daha doğrusu tüm haklar ile sistemi yönetiyor.")
+else :
+    print("Böyle bir exploit çeşidi bulunmamaktadır.")
